@@ -7,34 +7,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Tokyo Vibes</h1>
-            <p>Bringing your vision to life with stunning videography and editing.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">Tokyo Vibes</div>
+            <div class="menu-icon" id="mobile-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="text-box">The Videography Experience</h1>
+                <p class="text-box">Capturing the essence of your moments with a professional touch.</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+            <div class="hero-bar"></div>
+        </div>
+    </section>
     
     <main>
-        <section id="about" class="section about-section">
-            <h2>About Me</h2>
-            <p>As a professional videographer and editor, I specialize in creating visually stunning content that captures the essence of your vision. Let's create something amazing together.</p>
+        <section id="about" class="section about-section slide-in-right">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>As a professional videographer and editor, I specialize in creating visually stunning content that captures the essence of your vision. Let's create something amazing together.</p>
+            </div>
         </section>
         
-        <section id="services" class="section services-section">
-            <h2>My Services</h2>
-            <p>Offering a wide range of services including videography, editing, post-production, and more. Whether it's a commercial project, a music video, or a personal project, I've got you covered.</p>
+        <section id="services" class="section services-section slide-in-left">
+            <div class="card">
+                <h2>My Services</h2>
+                <p>Offering a wide range of services including videography, editing, post-production, and more. Whether it's a commercial project, a music video, or a personal project, I've got you covered.</p>
+            </div>
         </section>
         
-        <section id="portfolio" class="section portfolio-section">
-            <h2>Portfolio</h2>
-            <p>Check out some of my recent work and see the quality and creativity I bring to every project.</p>
-            <div class="portfolio-grid">
-                <!-- Add portfolio images/videos here -->
-                <div class="portfolio-item">Project 1</div>
-                <div class="portfolio-item">Project 2</div>
-                <div class="portfolio-item">Project 3</div>
-                <div class="portfolio-item">Project 4</div>
+        <section id="portfolio" class="section portfolio-section slide-in-right">
+            <div class="card">
+                <h2>Portfolio</h2>
+                <p>Check out some of my recent work and see the quality and creativity I bring to every project.</p>
+            </div>
+            <div class="carousel">
+                <button class="carousel-btn prev-btn">‹</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <img src="portfolio1.jpg" alt="Portfolio Item 1">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="portfolio2.jpg" alt="Portfolio Item 2">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="portfolio3.jpg" alt="Portfolio Item 3">
+                        </li>
+                        <!-- Add more slides as needed -->
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn">›</button>
             </div>
         </section>
         
